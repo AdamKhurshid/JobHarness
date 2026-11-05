@@ -1,0 +1,78 @@
+[
+  {
+    "company_name": "tiket.com",
+    "title": "Software Engineer II (Growth, Analytics & Discovery)",
+    "url": "https://www.linkedin.com/jobs/view/4478870465",
+    "pay_per_week": null,
+    "qualifications": [],
+    "location": "",
+    "is_in_person": null,
+    "_error": "ValueError: No JSON object found in response: ''"
+  },
+  {
+    "company_name": "Grab",
+    "title": "Senior Software Engineer, Backend",
+    "url": "https://www.linkedin.com/jobs/view/4482947573",
+    "pay_per_week": null,
+    "qualifications": [
+      "Degree in Computer Science, Software Engineering, Information Technology or related fields",
+      "5+ years of experience in software engineering in a distributed systems environment",
+      "Computer Science fundamentals in algorithms and data structures",
+      "Understanding of system performance and scaling",
+      "Programming skills in any language but must be willing to work on Golang",
+      "Passionate about building products, features, and platforms to accelerate business growth"
+    ],
+    "location": "Singapore, Singapore",
+    "is_in_person": true
+  },
+  {
+    "company_name": "JPMorganChase",
+    "title": "Software Engineer III - Quorum Technology - Java, Kotlin, AWS",
+    "url": "https://www.linkedin.com/jobs/view/4468822082",
+    "pay_per_week": null,
+    "qualifications": [],
+    "location": "",
+    "is_in_person": null,
+    "_error": "ValueError: No JSON object found in response: ''"
+  },
+  {
+    "company_name": "Affirm",
+    "title": "Software Engineer II, Fullstack (Ads Platform)",
+    "url": "https://www.linkedin.com/jobs/view/4476882191",
+    "pay_per_week": null,
+    "qualifications": [],
+    "location": "",
+    "is_in_person": null,
+    "_error": "ValueError: No JSON object found in response: ''"
+  },
+  {
+    "company_name": "JPMorganChase",
+    "title": "Software Engineer III - Java",
+    "url": "https://www.linkedin.com/jobs/view/4453092421",
+    "pay_per_week": null,
+    "qualifications": [],
+    "location": "",
+    "is_in_person": null,
+    "_error": "ValueError: No JSON object found in response: ''"
+  },
+  {
+    "company_name": "QUO",
+    "title": "Frontend Engineer",
+    "url": "https://www.indeed.com/viewjob?jk=86853fa9967ee8ff",
+    "pay_per_week": null,
+    "qualifications": [],
+    "location": "",
+    "is_in_person": null,
+    "_error": "ValueError: No JSON object found in response: ''"
+  },
+  {
+    "company_name": "Goliath Partners",
+    "title": "Software Engineer",
+    "url": "https://www.indeed.com/viewjob?jk=8c1f6853536d3cdb",
+    "pay_per_week": null,
+    "qualifications": [],
+    "location": "",
+    "is_in_person": null,
+    "_error": "ValueError: Unbalanced braces in response: '{\\n  \"company_name\": \"Goliath Partners\",\\n  \"title\": \"Software Engineer\",\\n  \"url\": \"https://www.indeed.com/viewjob?jk=8c1f6853536d3cdb\",\\n  \"pay_per_week\": \"$6,730.77/week\",\\n  \"qualifications\": [\\n    \"Ar'"
+  }
+]
