@@ -1,3 +1,8 @@
+'''
+Uses Ashby and JobSpy to scrape jobs cleanly and reliably in headless mode. 
+Outputs a JSON file with jobinformation and description as a full text wall.
+'''
+
 import json
 import time
 import requests

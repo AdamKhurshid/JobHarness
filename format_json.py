@@ -1,40 +1,5 @@
-#!/usr/bin/env python3
 """
-Format raw job listings into a clean schema using Gemma 3 12B via Ollama.
-
-Designed to run stably for HUNDREDS of jobs:
-  - Saves the output file after every single job (atomic temp-file + rename).
-  - Resumable: re-running skips jobs already done (matched by url).
-  - Retries flaky/OOM-killed Ollama calls with exponential backoff.
-  - Can force Ollama to unload the model every N jobs to bound memory.
-  - Caps the model's context window to limit KV-cache memory.
-
-Usage
------
-    python format_jobs.py input.json -o output.json
-    python format_jobs.py input.json -o output.json --resume
-    python format_jobs.py input.json -o output.json --unload-every 10 --num-ctx 4096
-    python format_jobs.py input.json -o output.json --model gemma3:4b   # less RAM
-
-Input JSON  : a single object OR a list of objects.
-Output JSON : a list of objects with the schema shown below.
-
-Requirements
-------------
-- Ollama running locally with the model pulled:
-      ollama pull gemma3:12b
-- Python 3.8+ (stdlib only; no pip install needed)
-
-Memory notes
-------------
-The 12B model needs ~8 GB of RAM/VRAM resident while loaded. Ollama keeps it
-warm between calls (this is GOOD — reloading 8 GB per call would be slow).
-If you are memory-constrained, in order of preference:
-  1. Use a smaller model:  --model gemma3:4b   (~3 GB)
-  2. Cap context:          --num-ctx 4096      (smaller KV cache)
-  3. Unload periodically:  --unload-every 10  (frees VRAM, reloads next call)
-  4. Unload every call:    --unload-between   (slowest; safest for tiny machines)
-You can also set OLLAMA_KEEP_ALIVE on the `ollama serve` process itself.
+Uses gemma4:12b (served via Ollama) to format the scraped jobs into a consisent JSON Structure
 """
 
 import argparse
